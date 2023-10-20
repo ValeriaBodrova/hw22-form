@@ -15,13 +15,13 @@ function displayData() {
 
     const tableHTML = `
         <table class="table table-bordered">
-            <tr><td>Ім'я</td><td>${name}</td></tr>
-            <tr><td>Прізвище</td><td>${surname}</td></tr>
-            <tr><td>Дата народження</td><td>${dob}</td></tr>
-            <tr><td>Стать</td><td>${gender}</td></tr>
-            <tr><td>Місто</td><td>${city}</td></tr>
-            <tr><td>Адреса</td><td>${address}</td></tr>
-            <tr><td>Мови</td><td>${languagesList}</td></tr>
+            <tr scope="row"><td>Ім'я</td><td>${name}</td></tr>
+            <tr scope="row"><td>Прізвище</td><td>${surname}</td></tr>
+            <tr scope="row"><td>Дата народження</td><td>${dob}</td></tr>
+            <tr scope="row"><td>Стать</td><td>${gender}</td></tr>
+            <tr scope="row"><td>Місто</td><td>${city}</td></tr>
+            <tr scope="row"><td>Адреса</td><td>${address}</td></tr>
+            <tr scope="row"><td>Мови</td><td>${languagesList}</td></tr>
         </table>
     `;
 
