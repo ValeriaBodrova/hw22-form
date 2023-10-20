@@ -14,7 +14,7 @@ function displayData() {
     languagesList = languagesList.slice(0, -2);  // Видалення останньої коми
 
     const tableHTML = `
-        <table border="1">
+        <table class="table table-bordered">
             <tr><td>Ім'я</td><td>${name}</td></tr>
             <tr><td>Прізвище</td><td>${surname}</td></tr>
             <tr><td>Дата народження</td><td>${dob}</td></tr>
