@@ -1,10 +1,3 @@
-/*     let languagesList = '';
-    languages.forEach(lang => {
-        languagesList += lang.value + ', ';
-    });
-    languagesList = languagesList.slice(0, -2);  // Видалення останньої коми
- */
-
 
 const form = document.getElementById('registrationForm');
 
