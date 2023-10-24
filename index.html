@@ -13,16 +13,16 @@
     <form id="registrationForm">
         <div class="input-group mt-3 mb-3">
             <label class="input-group-text" for="name">Ім'я: </label>
-            <input type="text" id="name" class="form-control" required>
+            <input type="text" name="name" class="form-control" required>
         </div>
     
         <div class="input-group mb-3">
             <label class="input-group-text" for="surname">Прізвище:</label>
-            <input type="text" id="surname" class="form-control" required>
+            <input type="text" name="surname" class="form-control" required>
         </div>
     
         <label for="dob">Дата народження:</label>
-        <input type="date" id="dob" class="form-control" required><br>
+        <input type="date" name="dob" class="form-control" required><br>
     
         <span>Стать:</span>
         <div class="form-check">
@@ -35,14 +35,14 @@
         </div>
     
         <label for="city">Місто:</label>
-        <select id="city" class="form-select">
+        <select name="city" class="form-select">
             <option value="Київ">Київ</option>
             <option value="Львів">Львів</option>
             <option value="Одеса">Одеса</option>
         </select><br>
     
         <label for="address">Адреса:</label>
-        <textarea id="address" class="form-control" rows="3"></textarea><br>
+        <textarea name="address" class="form-control" rows="3"></textarea><br>
     
         <span>Мови, якими володіє:</span>
         <div class="form-check">
