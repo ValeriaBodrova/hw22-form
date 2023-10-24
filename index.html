@@ -10,41 +10,52 @@
 </head>
 <body>
 
-<form id="registrationForm">
-    <div class="input-group mt-3 mb-3" >
-    <span class="input-group-text">Ім'я: </span> 
-    <input type="text" id="name" class="form-control" required>
-    </div>
-
-    <div class="input-group mb-3" >
-    <span class="input-group-text">Прізвище:  </span> 
-    <input type="text" id="surname" class="form-control" required>
-    </div>
-
-    Дата народження: <input type="date" id="dob" class="form-control" required><br>
-    Стать: 
-    <div class="form-check">
-    <input type="radio" name="gender" value="Чоловік" class="form-check-input" required> Чоловік
-    </div>
-    <div class="form-check">
-    <input type="radio" name="gender" value="Жінка" class="form-check-input" required> Жінка
-    </div>
-    Місто:
-    <select id="city"  class="form-select">
-        <option value="Київ">Київ</option>
-        <option value="Львів">Львів</option>
-        <option value="Одеса">Одеса</option>
-    </select><br>
-    Адреса: <textarea id="address" class="form-control" rows="3"></textarea><br>
-    Мови, якими володіє: 
-    <div class="form-check">
-    <input type="checkbox" name="language" value="Англійська" class="form-check-input"> Англійська
-    </div>
-    <div class="form-check">
-    <input type="checkbox" name="language" value="Українська" class="form-check-input"> Українська
-    </div>
-    <button type="button" class="btn btn-primary" onclick="displayData()">Зберегти</button>
-</form>
+    <form id="registrationForm">
+        <div class="input-group mt-3 mb-3">
+            <label class="input-group-text" for="name">Ім'я: </label>
+            <input type="text" id="name" class="form-control" required>
+        </div>
+    
+        <div class="input-group mb-3">
+            <label class="input-group-text" for="surname">Прізвище:</label>
+            <input type="text" id="surname" class="form-control" required>
+        </div>
+    
+        <label for="dob">Дата народження:</label>
+        <input type="date" id="dob" class="form-control" required><br>
+    
+        <span>Стать:</span>
+        <div class="form-check">
+            <input type="radio" name="gender" id="male" value="Чоловік" class="form-check-input" required>
+            <label for="male">Чоловік</label>
+        </div>
+        <div class="form-check">
+            <input type="radio" name="gender" id="female" value="Жінка" class="form-check-input" required>
+            <label for="female">Жінка</label>
+        </div>
+    
+        <label for="city">Місто:</label>
+        <select id="city" class="form-select">
+            <option value="Київ">Київ</option>
+            <option value="Львів">Львів</option>
+            <option value="Одеса">Одеса</option>
+        </select><br>
+    
+        <label for="address">Адреса:</label>
+        <textarea id="address" class="form-control" rows="3"></textarea><br>
+    
+        <span>Мови, якими володіє:</span>
+        <div class="form-check">
+            <input type="checkbox" name="language" id="english" value="Англійська" class="form-check-input">
+            <label for="english">Англійська</label>
+        </div>
+        <div class="form-check">
+            <input type="checkbox" name="language" id="ukrainian" value="Українська" class="form-check-input">
+            <label for="ukrainian">Українська</label>
+        </div>
+        <button type="button" class="btn btn-primary" onclick="displayData()">Зберегти</button>
+    </form>
+    
 
 <div id="outputTable"></div>
 
