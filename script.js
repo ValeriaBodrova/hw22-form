@@ -4,27 +4,24 @@ const form = document.getElementById('registrationForm');
 form.addEventListener('submit', function(event) {
     event.preventDefault();
 
-    // Використовуємо FormData для збору даних з форми
-    const formData = new FormData(event.target);
 
-    const userData = {};
+const formData = new FormData(event.target);
+const userData = {};
 
-    formData.forEach((value, key) => {
-        if (userData[key]) {
-            if (Array.isArray(userData[key])) {
-                userData[key].push(value);
-            } else {
-                userData[key] = [userData[key], value];
-            }
+formData.forEach((value, key) => {
+    if (userData[key]) {
+        if (Array.isArray(userData[key])) {
+            userData[key].push(value);
+        } else {
+            userData[key] = [userData[key], value];
+        }
         } else {
             userData[key] = value;
         }
     });
-    
-    // Виводимо дані в консоль
+  
     console.log(userData);
 
-    // І виводимо дані в таблицю
     displayData(userData);
 });
 
